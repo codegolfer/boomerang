@@ -125,5 +125,5 @@ def handler(event, context):
 
     masked_email = mask_email(person_email)
     ciscospark.post_message_rich(
-        ACCESS_TOKEN_SPARK, room_id, 'boom...it is on it\'s way to ``{}``'.format(masked_email))
+        ACCESS_TOKEN_SPARK, room_id, 'boom...the message is on it\'s way to ``{}``'.format(masked_email))
     return True
